@@ -1,0 +1,89 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Анкета</title>
+	</head>
+	<body>
+		<form action="#" method="post" enctype="multipart/form-data">
+		<h2 align="center">Форма для заполнения анкеты</h2>
+		<h3>Личные данные пользователя</h3>
+		<fieldset>
+		<label for="surname">Фамилия</label>
+		<input type="text" required autofocus id="surname">
+		<br>
+		<label for="name">Имя</label>
+		<input type="text" required id="name">
+		<br>
+		<label for="middle name">Отчество</label>
+		<input type="text" id="middle name" >
+		<br>
+		<label for="date">Дата рождения</label>
+		<input required id="date" type="date" min="2001-12-12">
+		<br>
+		<label for="email">Введите e-mail</label>
+		<input id="email" required autofocus type="email">
+		<br>	
+		<label for="pwd">Введите пароль</label>
+		<input required autofocus id="pwd" type="password" minlenghtght="6" maxlenght="15">
+		<br>
+		<label for="phone">Введите номер телефона(в формате 8ххх-ххххххх)</label>
+		<input id="phone" name="tel"type="tel"pattern="8[0-9] {3}-[0-9] {10}">
+		</fieldset>
+		<h3>Ваши личностные характеристики</h3>
+		<fieldset>	
+		<legend>Вы считаете себя общительным?</legend>
+		<legend><input name="friend" type="radio">Да</legend>
+		<legend><input name="friend" type="radio">Нет</legend>
+		<legend><input name="friend" type="radio">Не знаю</legend>
+		<br>
+		<legend>Вы считаете себя трудолюбивым?</legend>
+		<legend><input name="work" type="radio">Да</legend>
+		<legend><input name="work" type="radio">Нет</legend>
+		<legend><input name="work" type="radio">Не знаю</legend>
+		<br>
+		<legend>Если Вы увидите незнакомца,которому нужна помощь, Вы поможете?</legend>
+		<legend><input name="help" type="radio">Да</legend>
+		<legend><input name="help" type="radio">Нет</legend>
+		<legend><input name="help" type="radio">Зависит от ситуации</legend>
+		<br>
+		<legend>Любите ли Вы животных?</legend>
+		<legend><input name="animal" type="radio">Да</legend>
+		<legend><input name="animal" type="radio">Нет</legend>
+		<br>
+		<legend>Есть ли у Вас домашние питомцы?</legend>
+		<legend><input name="pet" type="radio">Да</legend>
+		<legend><input name="pet" type="radio">Нет</legend>
+		<br>
+		<legend>Какие домашние животные у Вас есть?</legend>
+		<legend><input name="home[]" type="checkbox">Собака</legend>
+		<legend><input name="home[]" type="checkbox">Кошка</legend>
+		<legend><input name="home[]" type="checkbox">Обезяна</legend>
+		<legend><input name="home[]" type="checkbox">Ящерица</legend>
+		<legend><input name="home[]" type="checkbox">Черепаха</legend>
+		<br>
+            <legend>Какой вид активности Вы предпочитаете?</legend>
+            <select name="sport" size="1" required>
+                <option value="1">Бег</option>
+                <option value="2">Плавание</option>
+                <option value="3">Йога/Пилатес</option>
+				<option value="4">Волейбол</option>
+                <option value="5">Футбол</option>
+				<option value="6">Ничего из предложенного</option>
+            </select>
+		</fieldset>
+		<fieldset>
+		<legend>Расскажите немного о себе:</legend>
+		<textarea autofocus required cols="50" rows="10" placeholder="Текст сообщения"></textarea>
+		<br>
+		<legend>Вы можете добавить любимые фотографии</legend>
+        <input type="file" multiple accept="image/*">
+		</fieldset>
+		<fieldset>
+		<br>
+		 <input type="submit" value="Отправить данные анкеты">
+         <input type="reset" value="Очистить поля анкеты">
+		</fieldset>
+		</form>
+	</body>
+</html>
