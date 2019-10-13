@@ -1,12 +1,13 @@
 <!DOCTYPE>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<title>Анкета</title>
+		<link rel="stylesheet" href="style1.css">
 	</head>
-	<body>
-		<form action="#" method="post" enctype="multipart/form-data">
-		<h2 align="center">Форма для заполнения анкеты</h2>
+	<body background="img2/1.jpg">
+		<form class="inherit-example" action="#" method="post" enctype="multipart/form-data">
+		<h2 style="color: red" align="center"><span>Форма для заполнения анкеты</span></h2>
 		<h3>Личные данные пользователя</h3>
 		<fieldset>
 		<label for="surname">Фамилия</label>
@@ -73,16 +74,16 @@
             </select>
 		</fieldset>
 		<fieldset>
-		<legend>Расскажите немного о себе:</legend>
-		<textarea autofocus required cols="50" rows="10" placeholder="Текст сообщения"></textarea>
+		<legend> Расскажите немного о себе:</legend>
+		<textarea autofocus required placeholder="Текст сообщения"></textarea>
 		<br>
 		<legend>Вы можете добавить любимые фотографии</legend>
         <input type="file" multiple accept="image/*">
 		</fieldset>
 		<fieldset>
 		<br>
-		 <input type="submit" value="Отправить данные анкеты">
-         <input type="reset" value="Очистить поля анкеты">
+		 <input type="submit" class="buttons" value="Отправить данные анкеты">
+         <input type="reset" class="buttons" value="Очистить поля анкеты">
 		</fieldset>
 		</form>
 	</body>
