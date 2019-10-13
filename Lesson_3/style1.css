@@ -1,0 +1,25 @@
+.text-center {
+	text-align: center;
+}
+body {
+    background-image: url(img2/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h2>span {
+	font-weight: bold;
+}
+.inherit-example {
+	color: gray;
+}
+.buttons {
+    width: 180px;
+    height: 40px;
+    text-decoration: none;
+    padding: 10px;
+	background: purple;
+    text-align: center;
+    border-radius: 30px;
+}
