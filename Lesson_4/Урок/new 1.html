@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+          <title>Подключение стилей/CSS селекторы</title>
+        <style>
+            h2 {
+            color: blue;
+            }
+        </style>
+    <!--подключение файла со стилями (относится к связыванию)-->
+        <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <h1 style="color: red">Встраивание-подключение стилей через атрибут style</h1>
+    <h2>Вложение- подключение стилей черег тег style в теге head</h2>
+    <h3 class="text-center">Связывание - подключение файлов со стилями через тег link в теге head (для этого создаем новую страницу со всеми стилями(style.css))</h3>
+	
+	<div id="container"></div>
+	<p class="text-center">I want to sleep.</p> 
+	<p>I want <span> to </span> sleep.</p> 
+	
+	<div> 
+		<p>I want <span> to </span> sleep.</p> 
+	</div>
+	<div>
+		<p class="green">
+		I
+		<a href="#">want to </a>
+		sleep
+		</p>
+	</div>
+	<div>
+		<p class="brown">
+		I
+		<a href="#">want to </a>
+		sleep
+		</p>
+	</div>
+	<div class="inherit-example">
+		I want to sleep.
+		<p>I want to sleep.</p>
+		<p>I want to sleep.</p>
+	</div>
+<h5 class="some-class" id="some_id">
+		Специфичность
+</h5>
+		
+		
+</body>
+</html>

@@ -1,0 +1,73 @@
+/*текст комметария*/
+
+/*css селекторы - указывают браузеру, какие элементы html нужно выбрать для применения стилей*/
+
+/*css селектор {
+    свойство1: значение;
+    свойство2: значение;
+    свойство3: значение;
+    }*/
+
+/*1. селектор тега (имя тега)*/
+h3 {
+    color: green !important;
+}
+
+
+h3 {
+    color: yellow;
+}
+
+/*2. селектор идентификатора элемента (через атрибут id*/
+#container {
+	height: 100px;
+	width: 300px;
+	background: yellow;
+}
+
+/*селектор класса (стили применяются ко всем элементам, для которых указан соответств. класс)*/
+.text-center {
+	text-align: center;
+}
+/*дочерний селектор*/
+/*css-селектор1> css-селектор2 {}*/
+p > span {
+	font-weight: bold;
+}
+/*селектор потомков*/
+div span {
+	color: orange
+}
+div .green a{
+	text-decoration: none;
+	color: red;
+}
+/* после div   нужен пробел для того, чтобы показать что класс грин вложен в элемент див */
+p.brown a{
+	text-decoration: line-through;
+	color: brown;
+}
+/*селектор атрибута*/
+/*[атрибут]
+[атрибут="значение"]
+css-селектор[атрибут]
+css-селектор[атрибут="значение"]*/
+/*наследование в css*/
+.inherit-example {
+	color: red;
+	border: 1px solid black;
+}
+.inherit-example p {
+	border: inherit;
+}
+#some_id {
+	background: yellow;
+}
+.some-class {
+	background: green;
+}
+h5 {
+	background: red;
+}
+
+/*Приоритет id 0100 class 0010 встроенный стиль 1000*/
