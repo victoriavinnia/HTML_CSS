@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+}
+.container {
+	max-width: 1200;
+	margin: 0 auto;
+}
+header {
+	background: grey;
+}
+header .container {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;/*чтобы при сжатии страницы элементы все равно бы показывались, не пропадали*/
+}
+header .login {
+	margin-left: auto;
+}
+header ul {
+	display: flex;
+	list-style-type: none;/*чтобы убрать маркеры в списке*/
+}
+header ul a {
+	padding: 7px 12px;
+	text-decoration: none;/*чтобы убрать подчеркивание*/
+}
+header ul a:hover {/*для выделения цветом принаведении мышью*/
+	background: orange;
+}
+.flex-row {
+	display: flex;
+}
+.flex-1 {
+	flex: 2;/*этот элемент занимает 2/3*/
+}
+.flex-2 {
+	flex: 1;/*этот элемент занимает 1/3*/
+}
+.border {
+	border: 2px solid black;
+}
+

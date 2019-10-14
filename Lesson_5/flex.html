@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexible Box Layout Module</title>
+	<link rel="stylesheet"href="flex.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<img src="img/1.jpg" width="60" height="60">
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">О нас</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<a class="login" href="#">Войти</a>
+		</div>
+	</header>
+	<div class="flex-row border"><!--Когда мы хотим определить как будут рассполагатья несколько элементов в 1 -->
+		<div class="flex-1 border">
+			<div class="border">
+				<div class="border" style="background: lawngreen">Фон</div>
+				<div class="border" style="background: darkcyan">Текст</div>
+			</div>
+			<div class="border flex-row">
+				<div class="flex-1 border">
+					<div class="border" style="background: lightcoral">Фон1</div>
+					<div class="border" style="background: lawngreen">Текст1</div>
+				</div>
+				<div class="flex-1 border">
+					<div class="border" style="background: red">Фон2</div>
+					<div class="border" style="background: lightcoral">Текст2</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex-2 border">
+			<div class="border">
+			<div class="border" style="background: lightcoral">Текст</div>
+			<div class="border" style="background: red">Текст</div>
+			<div class="border" style="background: lawngreen">Текст</div>
+			<div class="border" style="background: lightcoral">Текст</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
